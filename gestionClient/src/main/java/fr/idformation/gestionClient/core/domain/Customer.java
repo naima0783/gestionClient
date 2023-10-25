@@ -11,10 +11,16 @@ import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
+/**
+ * Représente un client dans la base de données.
+ */
 @Entity
 @Table(name = "client")
 public class Customer {
 
+    	/**
+  	* Identifiant unique du client.
+     	*/
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "cli_id")
