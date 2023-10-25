@@ -6,6 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import fr.idformation.gestionClient.core.domain.Customer;
 
+@Repository
 public interface ICustomerRepository extends JpaRepository<Customer, Long> {
 
 	/**
